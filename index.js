@@ -48,3 +48,13 @@ function playGame(playerChoice){
             break;
     }
 }
+document.getElementById('resetButton').addEventListener('click', () => {
+    playerScore = 0;
+    computerScore = 0;
+    playerScoreDisplay.textContent = playerScore;
+    computerScoreDisplay.textContent = computerScore;
+    playerDisplay.textContent = 'Your choice: ';
+    computerDisplay.textContent = 'Computer\'s choice: ';
+    resultDisplay.textContent = '';
+    resultDisplay.classList.remove("greenText", "redText");
+});
